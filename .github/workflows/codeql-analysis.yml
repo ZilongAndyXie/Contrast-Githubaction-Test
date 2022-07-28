@@ -66,15 +66,15 @@ jobs:
     # check out project
     steps:
     - uses: actions/checkout@v2
-    # steps to build the artifact you want to scan
+    # building the artifact that need to be scanned -> I guess buidling in a jar file
     # -name: Build Project
     # ...
     # Scan Artifact    
     - name: Contrast Scan Action
       uses: Contrast-Security-OSS/contrastscan-action@v2.0.2
       with:
-        artifact: mypath/target/myartifact.jar
-        apiKey: ${{ secrets.CONTRAST_API_KEY }}
+        artifact: mypath/target/myartifact.jar #name needs to adjusted
+        apiKey: ${{ secrets.CONTRAST_API_KEY }} # where do I get the information?
         orgId: ${{ secrets.CONTRAST_ORGANIZATION_ID }}
         authHeader: ${{ secrets.CONTRAST_AUTH_HEADER }}
     #Upload the results to GitHub      
