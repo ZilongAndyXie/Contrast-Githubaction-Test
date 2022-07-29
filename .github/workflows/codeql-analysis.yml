@@ -76,6 +76,8 @@ jobs:
 
     - name: Build Project with Gradle Wrapper
       run: ./gradlew build
+    - name: Converting into .jar file
+      run: jar cvfe myartifact.jar
 
     # Scan Artifact    
     - name: Contrast Scan Action
