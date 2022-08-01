@@ -73,8 +73,7 @@ jobs:
         java-version: 1.8 
     - name: Run script
       uses: gradle/gradle-build-action@v2
-      with:
-        build-root-directory: ./build
+      
     # Scan Artifact    
     - name: Contrast Scan Action
       uses: Contrast-Security-OSS/contrastscan-action@v2.0.2
