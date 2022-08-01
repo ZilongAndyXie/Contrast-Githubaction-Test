@@ -68,7 +68,7 @@ jobs:
     - uses: actions/checkout@v2
     # building the artifact that need to be scanned
      using: composite
-  steps:
+    steps:
     - name: Setup Java
       uses: actions/setup-java@v3
       with:
