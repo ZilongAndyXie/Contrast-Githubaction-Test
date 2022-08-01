@@ -62,10 +62,10 @@ jobs:
       uses: github/codeql-action/analyze@v1
       
   build_and_scan:
-    runs-on: ubuntu-latest
+    # runs-on: ubuntu-latest
     # check out project
-    steps:
-    - uses: actions/checkout@v2
+    # steps:
+    # - uses: actions/checkout@v2
     # building the artifact that need to be scanned
      using: composite
     steps:
