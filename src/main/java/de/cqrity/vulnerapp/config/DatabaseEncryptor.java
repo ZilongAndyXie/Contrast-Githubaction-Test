@@ -5,7 +5,7 @@ import javax.crypto.spec.SecretKeySpec;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 
-//test
+
 public class DatabaseEncryptor {
 
     private static DatabaseEncryptor encryptor;
