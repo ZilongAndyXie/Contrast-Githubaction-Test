@@ -33,6 +33,5 @@ Either Execute the steps in the file under setup -> setup_postgres.txt or do fol
   - Enter your username as "training" and password (use the same password you used when previously configuring the server to accept remote connections) for the database.
   - Click “Save” to apply the configuration.
  
- Starting the server
- `./gradlew bootRun`
+ Starting the server using `./gradlew bootRun` command
  The tables in the database should be created automatically and a connection should be established. (Make sure that the database is running).
