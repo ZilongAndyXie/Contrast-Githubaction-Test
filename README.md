@@ -1,7 +1,7 @@
 # Vulnderads
 Prerequisit is a running java version
 ## Local Setup for Windows Environment
-There two ways of getting access to the vulnerads application. Either you use the supplied VM by Viadee or you setup the application locally on your device.
+There two ways of getting access to the vulnerads application. Either you use the supplied **VM by Viadee** or you **setup the application locally** on your device.
 ### Installations
 Gradle
 
@@ -22,7 +22,7 @@ Postgresql
 After cloning this git repository.
 
 Database setup
-Either Execute the steps in the file under setup -> setup_postgres.txt or do follow all steps via pgAdmin 4 panel.
+Either **execute the steps in the file** under setup -> setup_postgres.txt OR **follow all steps via pgAdmin 4 panel**.
 - Launch pgAdmin 4.
 - Go to the “Dashboard” tab. In the “Quick Link” section, click “Add New Server” to add a new connection.
 - ![image](https://user-images.githubusercontent.com/109356068/184847735-3acb010e-cbdd-4b89-80af-5368e53a5824.png)
