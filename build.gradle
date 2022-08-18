@@ -9,18 +9,7 @@ apply plugin: 'idea'
 apply plugin: 'eclipse'
 apply plugin: 'java'
 apply plugin: 'org.springframework.boot'
-
-plugins {
-  id "org.sonarqube" version "3.4.0.2513"
-}
-
-sonarqube {
-  properties {
-    property "sonar.projectKey", "vulnerads-scanning"
-    property "sonar.organization", "viadee-internal"
-    property "sonar.host.url", "https://sonarcloud.io"
-  }
-}
+apply plugin: 'org.sonarqube' version '3.4.0.2513'
 
 repositories {
     mavenCentral()
