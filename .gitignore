@@ -8,6 +8,7 @@ out/*
 *.iml
 .gradle/
 *.p12
+target/*
 
 ### Eclipse ###
 .project
