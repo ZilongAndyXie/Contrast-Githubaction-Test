@@ -4,6 +4,9 @@ buildscript {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:2.2.1.RELEASE")
     }
 }
+plugins {
+  id "org.sonarqube" version "3.4.0.2513"
+}
 
 apply plugin: 'idea'
 apply plugin: 'eclipse'
@@ -54,10 +57,6 @@ dependencies {
 
 }
 
-plugins {
-  id "org.sonarqube" version "3.4.0.2513"
-}
-
 sonarqube {
   properties {
     property "sonar.projectKey", "vulnerads-scanning"
@@ -65,4 +64,3 @@ sonarqube {
     property "sonar.host.url", "https://sonarcloud.io"
   }
 }
-
