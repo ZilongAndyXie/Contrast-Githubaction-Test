@@ -9,6 +9,8 @@ apply plugin: 'idea'
 apply plugin: 'eclipse'
 apply plugin: 'java'
 apply plugin: 'org.springframework.boot'
+apply plugin: "org.sonarqube" version "3.4.0.2513"
+
 
 repositories {
     mavenCentral()
@@ -52,9 +54,6 @@ dependencies {
     
     developmentOnly 'org.springframework.boot:spring-boot-devtools:2.2.1.RELEASE'
 
-}
-plugins {
-  id "org.sonarqube" version "3.4.0.2513"
 }
 
 sonarqube {
