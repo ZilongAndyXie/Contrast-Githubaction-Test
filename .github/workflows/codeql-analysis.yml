@@ -1,3 +1,4 @@
+name: SonarCloud Scan
 on:
   push:
     branches:
@@ -8,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - name: Clone Repository
-        uses: action
+        uses: actions/checkout@v2
       - name: Analyze with SonarCloud
         uses: sonarsource/sonarcloud-github-action@v1.3
         env:
